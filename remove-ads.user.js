@@ -6,6 +6,7 @@
 // @version      1.0.0
 // @description  Remove all shitty adds
 // @author       JBlairy
+// @match        *://*/*
 // @grant        none
 // ==/UserScript==
 
