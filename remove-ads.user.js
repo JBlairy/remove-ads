@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Ads Killer
 // @namespace    JBlairy
-// @downloadURL  https://github.com/JBlairy/remove-ads/blob/master/remove-ads.user.js
-// @updateURL    https://github.com/JBlairy/remove-ads/blob/master/remove-ads.user.js
+// @downloadURL  https://raw.githubusercontent.com/JBlairy/remove-ads/main/remove-ads.user.js
+// @updateURL    https://raw.githubusercontent.com/JBlairy/remove-ads/main/remove-ads.user.js
 // @version      1.0.1
 // @description  Remove all adds
 // @author       JBlairy
