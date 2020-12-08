@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         Shitty Ads Killer
+// @name         Ads Killer
 // @namespace    JBlairy
 // @downloadURL  https://github.com/JBlairy/remove-ads/blob/master/remove-ads.user.js
 // @updateURL    https://github.com/JBlairy/remove-ads/blob/master/remove-ads.user.js
-// @version      1.0.0
-// @description  Remove all shitty adds
+// @version      1.0.1
+// @description  Remove all adds
 // @author       JBlairy
-// @match        *://*/*
+// @match        https://streaming.voir-film.cc/*
 // @grant        none
 // ==/UserScript==
 
@@ -26,11 +26,8 @@
 
     const observer = new MutationObserver(function(mutations) {
         mutations.forEach(function() {
-            console.log(host());
-            if (host()) {
-                removeElement(document.querySelectorAll(".tolro_b"));
-                removeElement(document.querySelectorAll(".voir-btn"));
-            }
+            removeElement(document.querySelectorAll(".tolro_b"));
+            removeElement(document.querySelectorAll(".voir-btn"));
         });
     });
     observer.observe(list, config);
@@ -42,12 +39,4 @@ function removeElement(element)
     [].forEach.call(element, function(el) {
         el.remove();
     });
-}
-
-function host()
-{
-    let str = window.location.host;
-    const words = str.split('.');
-
-    return words.includes('streaming') || words.includes('voirfilm')
 }

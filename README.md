@@ -1,4 +1,4 @@
-# Remove shitty ads
+# Remove ads
 
 Remove ads is a Tampermonkey user script, 
 its role is to remove addons and disturbing advertisements.
@@ -25,8 +25,7 @@ its role is to remove addons and disturbing advertisements.
 - Automatically scan the page when something change
 - Delete all identified elements
 
-# Whitelist and blacklist
+# Site Match
 
-By default all sites are analyzed, you can whitelist or blacklist sites if you wish by going to the menu 
-* Edit script => Settings tab => Includes/Excludes 
+Working sites are marked with the match tag
  
